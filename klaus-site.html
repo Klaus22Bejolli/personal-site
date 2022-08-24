@@ -1,0 +1,281 @@
+<html>
+    <head>
+        <title>Klaus Site</title>
+<link rel="stylesheet" href="klaus-site.css">
+
+<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet"> 
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.0/jquery.min.js" integrity="sha256-xNzN2a4ltkB44Mc/Jz3pT4iU1cmeR0FkXs4pru/JxaQ=" crossorigin="anonymous"></script>
+</a> 
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/gsap.min.js"></script>
+
+
+    </head>
+    <body>
+        <section id="heder">
+        <div class="hero">
+        <nav>
+       <h2 class="logo">MY  <span >SITE</span></h2>
+      <ul>
+        <li > <a href="#animation" >Animation</a></li>
+        <li > <a href="#about" >About Us</a></li>
+        <li > <a href="#skills" >Skills</a></li>
+        <li > <a href="#" >Contact US</a></li>
+       </ul>
+         </nav>
+      
+         <div class="content">
+            <h3 class="h3col">Hello, <span></span></h3>
+            <h1 class="h1col"> My name is  Klaus Bejolli <span> </span></h1>
+            <h2 class="h2col">I'am a Web Developer  <span></span></h2>
+         </div>
+             
+        </div>
+         
+   
+        
+
+    
+  
+  
+    </section>
+    <script>
+        AOS.init({
+  duration: 1200,
+})
+
+    </script>
+    
+        <section id="about">
+           
+                
+            
+            
+         <div class="row">
+                    <div class=" col-sm-6">
+                        <div class="item" data-aos="fade-right">
+           
+                <img src="klausphoto.jpeg" class="klausimg">
+            
+                        </div>
+                    </div>  
+           
+            <div class="col-sm-6">
+                <div class="item" data-aos="fade-left">
+                <div class="about-text">
+                    <h2> About Me </h2>
+                    <h3>Developer</h3>
+                    <p>I am a front-end developer.I can provide clean code and pixel perfect desing.I also make the website more & more interactive with web animations.I cna provide clean code pixel perfect desing.A responsive desing make yor website accessible to all ussers, regardless of therir device</p>
+                </div>
+                </div>
+            </div> 
+         </div>
+
+        </section>
+   
+ 
+        <section id="animation">
+            <div class="row">
+     <div class="col-sm-6">
+<div id="wrapper" ontouchstart=""  >
+
+  <svg id="svg1"  xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 310.9 343.3">
+    <!-- when the hover is active, i use svg filter to set background Image for silhouette (change opacity in js for feFlood), otherwise when hover is inactive  background is set to solid color -->
+    <filter id="filter" primitiveUnits="objectBoundingBox">
+        <feImage id="bg" x="0%" y="0%" height="100%" width="300%" preserveAspectRatio="xMinYMid slice"
+            result="PHOTO" xlink:href="https://user-images.githubusercontent.com/26748614/112761101-ce8e6800-8ff9-11eb-88b9-39be70529906.jpg" />
+        <feComposite operator="in" in="PHOTO" in2="SourceGraphic" result="mask" />
+
+        <feFlood id="feFlood"    flood-color="rgb(13,157,197)" flood-opacity="1" result="flood" />
+        <feComposite operator="in" in="flood" in2="SourceGraphic" result="blue" />
+        <feMerge>
+            <feMergeNode in="mask" />
+            <feMergeNode in="blue" />
+        </feMerge>
+    </filter>
+
+    <g id="base" onmouseover="mouseOver()"  onmouseout="mouseOut()">
+        <!-- this is man silhouette svg element. I use Clip-Path to cut this Element in star shape and svg Filter to set background Image (which I animate on hover) -->
+        <path clip-path="url(#clipPath)" filter="url(#filter)"
+            d="M310.9,32.6S298,44.7,289.5,43.5c0,0,23.1-18.9,17.5-38.1,0,0-22.7,24.2-31.6,20.6,0,0-3.4-19.5-12.7-26,0,0-4.1,25.5-20.8,21.5,0,0,6.8-7,4.6-11.9,0,0-61.7,12.8-85.7,1.1-46.2-22.3-75.3,6.9-83,24.2,0,0-84.7,18-52.6,136.4,0,0,12.9,35.2.1,44.4l9.5-1.4s-6.4,16.6-12.2,16.9L35,229.4s11.8,54.4-.4,69.4C27,308.1,14.2,325.3,0,343.3H150.1a69.5,69.5,0,0,1,18.4-34.1c13-13.4,33-2.6,52.4-.8,23.1,2.2,22.3-13.8,23.6-20.8s3.8-12.8,8.9-16.4c8.3-5.8-2.9-11.8,2.8-12.5,11-1.5,4.3-14.4,5.9-22.1,1-4.4-.5-3.7,11.7-8.5s-12.6-35.4-12.5-49.7c.1-5.3,7.5-10.6,10.1-24.6,1.7-9.5-3.5-38.7-15.1-68.6C269.7,82,298.7,70.9,310.9,32.6Z" />
+
+        <defs>
+            <clipPath id="clipPath">
+                <polygon id="clip" 
+                    points="151.7 101.7 170.4 139.6 212.3 145.7 182 175.3 189.1 217 151.7 197.3 114.2 217 121.4 175.3 91.1 145.7 132.9 139.6 151.7 101.7" />
+            </clipPath>
+        </defs>
+    </g>
+
+</svg>
+
+
+  <div class="info">
+    
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 42.7 81.3">
+        <path fill="#fff" d="M18.2,0C14.5.4,1.9,1.1.1,4.9s10.6,15.5,11.3,15S4.3,8.7,3.3,7C19,15,39.5,28.4,39.7,48.4c.1,8.9-4.6,17.1-11.2,22.9C26.4,73.1,5.4,81.9,5.6,80.2c-.6,4.7,20.3-3.6,22.3-5.1,7.8-5.6,13.7-14.7,14.6-24.4C44.1,31.6,23.1,10.4,6,5.1c2.4-.3,6.3-.4,8.3-1.3C14.3,3.8,22.8-.4,18.2,0Z"/>
+        </svg>
+  </div>
+</div>  
+  </div>
+  
+  <div class="col-sm-6"class="col">
+    <h1 id="demo" >"A dream will always remain a dream if you continue to sleep"</h1>
+    </div>
+</div>
+        
+        </section>
+       
+       <section id="skills">
+        
+            <div class="row">
+               
+            <div class=" col-sm-12 col-md-4">   
+            <div class="box-model">
+
+
+                <p>Progrmaming  <span>Skills</span> 
+                <ul>
+                    <li>javascript</li>
+                    <li>unix</li>
+                    <li>html 5</li>
+                    <li>bootstrap</li>
+                    <li>css</li>
+                </ul>
+            </div>
+           
+            
+            
+           
+            <div class="box-model">
+                <h5>Front-End Skills</h5>
+                <ul>
+                    <li>javascript</li>
+                    <li>unix</li>
+                    <li>html 5</li>
+                    <li>bootstrap</li>
+                    <li>css</li>
+                </ul>
+            </div>
+            </div>
+           
+            
+            
+                
+            <div class="col-sm-12 col-md-4">   
+            <div class="box-model">
+                <img src="profilphoto.jpeg" class="klausimages2" >
+                <h5>Klaus Bejolli</h5>
+                <h5>Web Developer</h5>
+                <p>Front-End</p>
+            </div>
+            </div>
+
+             
+
+            <div class="col-sm-12 col-md-4">   
+             <div class="box-model">
+               <h5>Education and trajning</h5>
+               <p>
+           
+                <h5> BACHELOR AT COMPUTER SCIENCE  "Aleksander Moisiu" University Durres </h5>
+                14/10/2019  CURRENT  Durres, Albania 
+           
+                <H5>WEB DEVELOPMENT  Dominusoft Trainings</H5>
+                27/04/2022 04/07/2022 Rruga "Muslum Shyri", Tirane, Albania 
+               </p>
+              </div>
+           
+             <div class="box-model">
+                 
+                 <ul>
+                    <li>javascript</li>
+                    <li>unix</li>
+                    <li>html 5</li>
+                    <li>bootstrap</li>
+                    <li>css</li>
+                 </ul>
+
+               </div>
+            </div>
+        
+
+   
+       </section>
+        
+ <script> 
+var base = document.getElementById("base")
+var clip = document.getElementById("clip")
+var bg = document.getElementById("bg");
+var feFlood = document.getElementById("feFlood");
+
+var mouseHover;
+var raf;
+var j = 0;
+var opacityValue = 1;
+var opacityStop;
+
+
+base.addEventListener("mouseenter", function () {
+    mouseHover = true;
+    opacityStop = false;
+}, false);
+
+base.addEventListener("mouseleave", function () {
+    mouseHover = false;
+    window.setTimeout(function () {
+        cancelAnimationFrame(raf);
+        j = 0;
+    }, 600);
+}, false);
+
+clip.addEventListener('transitionstart', function () {
+    if (mouseHover) {
+        solidColorOpacity(); 
+        raf = window.requestAnimationFrame(bgAnimate);
+    }
+}, false);
+
+clip.addEventListener('transitionend', function () {
+    if (!mouseHover) {
+        opacityValue = 1;
+        feFlood.setAttribute("flood-opacity", 1);
+        opacityStop = true;
+    }
+}, false);
+
+function bgAnimate() {
+    j = j - .2;
+    if (j < -200) j = 0;
+    bg.setAttribute("x", j + "%");
+    raf = window.requestAnimationFrame(bgAnimate);
+}
+
+function solidColorOpacity() {
+    opacityValue = opacityValue - 0.015;
+    if (opacityValue < 0) return;
+    if(opacityStop) return;
+    feFlood.setAttribute("flood-opacity", opacityValue);
+    window.requestAnimationFrame(solidColorOpacity);
+}
+</script>
+       
+
+<script>
+ 
+    function mouseOver() {
+      document.getElementById("demo").style.color = "red";
+    }
+    
+    function mouseOut() {
+      document.getElementById("demo").style.color = "white";
+    }
+    </script>
+       
+    </body>
+  
+</html>

@@ -1,0 +1,299 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    overflow-x: hidden;
+    margin: 0 ;
+    padding: 0;
+
+}
+
+  
+.hero{
+    height: 100vh;
+    width: 100%;
+   background-image: url(kl2212.webp);
+   background-size: cover;
+   background-position: center;
+   background-attachment: fixed;
+   opacity: 1;
+
+} 
+
+#heder .content h1 span {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 0%;
+    background-color: rgb(196, 10, 10);
+    animation: text_reveal_box 2s ease ;
+    animation-delay: 1s;
+
+    
+
+}
+#heder .content h2 span {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 0%;
+    background-color: rgb(196, 10, 10);
+    animation: text_reveal_box 3s ease ;
+    animation-delay: 1.5s;
+
+    
+
+}
+#heder .content h3 span {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 0%;
+    background-color: rgb(196, 10, 10);
+    animation: text_reveal_box 1s ease ;
+    animation-delay: 0.5s;
+    
+
+}
+@keyframes text_reveal_box{
+    50%{
+        width: 100%;
+        left: 0;
+
+    }
+    100%{
+        width: 0;
+        left: 100%;
+
+    }
+}
+@keyframes text_reveal{
+    100%{
+        color: rgb(255, 255, 255);
+    }
+}
+ 
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 45px;
+    padding-left: 8%;
+    padding-right: 8%;
+
+}
+.logo{
+    color: white;
+    font-size: 35px;
+    letter-spacing: 1px;
+    cursor: pointer;
+
+}
+
+    
+
+nav ul li{
+    list-style-type: none;
+    display: inline-block;
+    padding: 10px 25px;
+
+}
+nav ul li a{
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    text-transform: capitalize;
+}
+nav ul li a:hover{
+    color: red;
+    transition: .4s;
+    
+}
+.content{
+    position: absolute;
+    top: 60%;
+    left: 10%;
+    
+
+}
+
+
+.h3col{
+   
+    display: block;
+    width: fit-content;
+    position: relative;
+  color: transparent;
+    font-size:40px;
+    animation:text_reveal 2.5s ease forwards ;
+    animation-delay: 1s;
+   
+}
+.h2col{ 
+    
+    display: block;
+    width: fit-content;
+    position: relative;
+     color:transparent;
+    font-size: 60px;
+    animation:text_reveal 1.5s ease forwards ;
+    animation-delay: 3s;
+
+}
+.h1col{
+    
+    display: block;
+    width: fit-content;
+    position: relative;
+    color:transparent;
+    font-size: 80px;
+    animation:text_reveal 2.5s ease forwards ;
+    animation-delay: 2s;
+
+}
+
+
+#about{
+    width: 100%;
+    padding: 70px 0px;
+    background-color: #000000;
+  
+}
+
+
+.klausimg{
+    height: 380px;
+     width: 350px;
+     margin: 20px;
+     padding: 10px;
+     border: 2px solid;
+     margin-left: 100px;
+      }
+
+
+
+
+  
+
+
+.about-text{
+    width: 400px;
+    height: 380px;
+    margin: 20px;
+    padding: 10px;
+    border: 1px;
+    margin-right: 100px;
+}
+
+
+
+.about-text h2{
+    color: aliceblue;
+    font-size: 75px; 
+    text-transform: capitalize;
+  
+}
+.about-text h3{
+    color: aliceblue;
+    
+   
+    
+
+}
+.about-text p{
+    color: #fcfc;
+    letter-spacing: 1px;
+    line-height: 28px;
+    font-size: 18px;
+    margin-bottom: 45px;
+
+}
+#skills{
+    width: 100%;
+    padding: 0px 0px;
+    background-color: beige;
+}
+
+.box-model{
+    background-color:#ffffff;
+    width: auto;
+    border: 7px solid rgb(150, 10, 2);
+    padding: 40px;
+    margin: 30px;
+    text-align: center;
+    border-radius: 30px;
+}
+.klausimages2{
+    width: 120px;
+   height: auto;
+   border-radius:50%;
+}
+
+#animation{
+    width: 100%;
+    padding: 70px 0px;
+    background-color: #ffffff;
+}
+#wrapper {
+    overflow: hidden;
+    width: 100%;
+    height: 60vh;
+    background: rgb(255, 255, 255);
+    position: relative;
+}
+
+#svg1 {
+    display: block;
+    width: 100%;             
+    height: 100%;
+    transform: scale(.9);
+    position: absolute;
+    bottom: -20px;
+    z-index: 2;
+}
+
+ #base {
+    cursor: pointer;
+}
+
+#clip {
+    transform: scale(1) rotate(0deg);
+    transform-origin: 50% 50%;
+    transition: all .8s linear;
+}
+
+#base:hover  #clip {
+    transform: scale(9) rotate(70deg);
+}
+ .info{
+    margin: 10px;
+    padding: 20px;
+    width: 500px;
+    height: 800px;
+
+ }
+
+#demo {
+ 
+   padding: 20px;
+   height: 550px;
+   width: 400px;
+  border: 1px;
+  color: #ffffff;
+  margin: 20px;
+
+  }
+ 
+  .col{
+    display: flex;
+  }
+
+
+
+    
+    
