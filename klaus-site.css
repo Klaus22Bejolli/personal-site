@@ -2,11 +2,11 @@
     padding: 0;
     margin: 0;
 }
-
 body{
     overflow-x: hidden;
-    margin: 0 ;
-    padding: 0;
+}
+html{
+    overflow-x: hidden;
 
 }
 
@@ -14,7 +14,7 @@ body{
 .hero{
     height: 100vh;
     width: 100%;
-   background-image: url(kl2212.webp);
+   background-image: url(panel2.jpg);
    background-size: cover;
    background-position: center;
    background-attachment: fixed;
@@ -28,7 +28,7 @@ body{
     left: 0;
     height: 100%;
     width: 0%;
-    background-color: rgb(196, 10, 10);
+    background-color: rgb(33, 214, 178);
     animation: text_reveal_box 2s ease ;
     animation-delay: 1s;
 
@@ -41,7 +41,7 @@ body{
     left: 0;
     height: 100%;
     width: 0%;
-    background-color: rgb(196, 10, 10);
+    background-color: rgb(38, 200, 173);
     animation: text_reveal_box 3s ease ;
     animation-delay: 1.5s;
 
@@ -54,7 +54,7 @@ body{
     left: 0;
     height: 100%;
     width: 0%;
-    background-color: rgb(196, 10, 10);
+    background-color: rgb(37, 207, 184);
     animation: text_reveal_box 1s ease ;
     animation-delay: 0.5s;
     
@@ -160,9 +160,14 @@ nav ul li a:hover{
 
 #about{
     width: 100%;
-    padding: 70px 0px;
+    padding: 150px 0px;
     background-color: #000000;
-  
+    background-image: url(panel2.jpg) ;
+    background-origin: padding-box;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    
 }
 
 
@@ -214,19 +219,32 @@ nav ul li a:hover{
 
 }
 #skills{
+   
     width: 100%;
-    padding: 0px 0px;
-    background-color: beige;
+   
+background-image: url(panel2.jpg) ;
+background-origin: padding-box;
+background-size: cover;
+background-position: center;
+background-attachment: fixed;
+
 }
 
 .box-model{
-    background-color:#ffffff;
+   color: #22b6ac;
     width: auto;
-    border: 7px solid rgb(150, 10, 2);
+    border: 7px solid rgb(38, 210, 190);
     padding: 40px;
     margin: 30px;
     text-align: center;
     border-radius: 30px;
+    
+
+}
+.box-model:hover{
+        background: #6de3d7;
+        color: #fff;
+        transform: translateY(-7px);
 }
 .klausimages2{
     width: 120px;
@@ -237,13 +255,17 @@ nav ul li a:hover{
 #animation{
     width: 100%;
     padding: 70px 0px;
-    background-color: #ffffff;
+    background-image: url(panel2.jpg) ;
+    background-origin: padding-box;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
 }
 #wrapper {
     overflow: hidden;
     width: 100%;
     height: 60vh;
-    background: rgb(255, 255, 255);
+   
     position: relative;
 }
 
@@ -254,7 +276,7 @@ nav ul li a:hover{
     transform: scale(.9);
     position: absolute;
     bottom: -20px;
-    z-index: 2;
+   
 }
 
  #base {
@@ -278,22 +300,115 @@ nav ul li a:hover{
 
  }
 
-#demo {
+#demo  {
  
    padding: 20px;
    height: 550px;
    width: 400px;
   border: 1px;
-  color: #ffffff;
+  color: transparent;
   margin: 20px;
-
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Kaushan Script', cursive;
   }
  
-  .col{
+ 
+  
+  
+.quote{
     display: flex;
-  }
+    justify-content: center;
+    align-items: center;
+
+}
+.logosection{
+    font-family: 'Kaushan Script', cursive;
+    text-align: center;
+    color: #3bdbd3;
+    height: 90px;
+    border: 7px solid rgb(52, 222, 182);
+    margin: 10px;
+}
+#fotter{
+   
+    width: 100%;
+   height: 390px;
+background-image: url(panel2.jpg) ;
+background-origin: padding-box;
+background-size: cover;
+background-position: center;
+background-attachment: fixed;
+}
+h1{
+
+    text-align: center;
+    margin: 50px;
+    padding: 10px;
+    width: auto;
+    height: auto;
+   
+}
+.socjal-link{
+    text-align: center;
+}
+.socjal-link .fa{
+    height: 50px;
+    width: 50px;
+    font-size: 30px;
+    line-height: 48px;
+    border: 1px solid #4fb6a2;
+    margin: 40px 5px 0;
+    color: #5acea6;
+    cursor: pointer;
+    transition: .5s;
+
+     
+} 
+.socjal-link .fa:hover{
+    background: #6de3d7;
+    color: #fff;
+    transform: translateY(-7px);
+
+}
+@import url("https://fonts.googleapis.com/css?family=Montserrat:700");
 
 
 
-    
-    
+
+
+
+
+
+
+
+
+ .heroo {
+	min-height: 100vh;
+	padding: clamp(1rem, 2vw, 5rem);
+	display: flex;
+	align-items: center;
+} 
+
+.heroo--secondary {
+	--mask: radial-gradient(circle at var(--x, 70%) var(--y, 50%), black 25%, transparent 0);
+	
+    bottom:0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: linear-gradient(20deg, #293433, #765a83, #383537, rgb(44, 42, 39));
+	color: rgb(9, 14, 23);
+	-webkit-mask-image: var(--mask);
+	mask-image: var(--mask);
+}
+
+.heroo__heading {
+	font-size: clamp(2rem, 5vw, 8rem);
+	text-transform: uppercase;
+	margin: 0;
+}
+
+
+
