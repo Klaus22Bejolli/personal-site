@@ -59,7 +59,7 @@
             
             
          <div class="row">
-                    <div class=" col-sm-6">
+                    <div class=" col-sm-12 col-lg-6 ">
                         <div class="item" data-aos="fade-right">
            
                 <img src="klausphoto.jpeg" class="klausimg">
@@ -67,7 +67,7 @@
                         </div>
                     </div>  
            
-            <div class="col-sm-6">
+            <div class="col-sm-12 col-lg-6">
                 <div class="item" data-aos="fade-left">
                 <div class="about-text">
                     
@@ -100,11 +100,11 @@
             result="PHOTO" xlink:href="https://user-images.githubusercontent.com/26748614/112761101-ce8e6800-8ff9-11eb-88b9-39be70529906.jpg" />
         <feComposite operator="in" in="PHOTO" in2="SourceGraphic" result="mask" />
 
-        <feFlood id="feFlood"    flood-color="red" flood-opacity="1" result="flood" />
-        <feComposite operator="in" in="flood" in2="SourceGraphic" result="red" />
+        <feFlood id="feFlood"    flood-color="#6de3d7" flood-opacity="1" result="flood" />
+        <feComposite operator="in" in="flood" in2="SourceGraphic" result="#6de3d7" />
         <feMerge>
             <feMergeNode in="mask" />
-            <feMergeNode in="red" />
+            <feMergeNode in="#6de3d7" />
         </feMerge>
     </filter>
 
@@ -321,7 +321,7 @@ function solidColorOpacity() {
 <script>
  
     function mouseOver() {
-      document.getElementById("demo").style.color = "red";
+      document.getElementById("demo").style.color = "#6de3d7";
     }
     
     function mouseOut() {
